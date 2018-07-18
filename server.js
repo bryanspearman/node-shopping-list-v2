@@ -45,7 +45,7 @@ app.post('/shopping-list', jsonParser, (req, res) => {
   res.status(201).json(item);
 });
 
-app.post('/shopping-list', jsonParser, (req, res) => {
+app.post('/recipes', jsonParser, (req, res) => {
   // ensure `name` and `ingredients` are in request body
   const requiredFields = ['name', 'ingredients'];
   for (let i = 0; i < requiredFields.length; i++) {
